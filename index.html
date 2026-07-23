@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京夏日花火與哈利波特影城 5日精緻隨行指南 | TOKYO SUMMER FESTIVAL 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent-gold: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --bg-dark: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.75);
+            --card-border: rgba(255, 255, 255, 0.12);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --starlux-gold: #d4af37;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background: linear-gradient(135deg, #090d16 0%, #111827 50%, #1e1b4b 100%);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(180deg, rgba(139, 92, 246, 0.18) 0%, rgba(15, 23, 42, 0) 100%);
+            border: 1px solid var(--card-border);
+            margin-bottom: 30px;
+            border-radius: 24px;
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .agency-tag {
+            display: inline-block;
+            background: linear-gradient(90deg, #d4af37, #f59e0b);
+            color: #000;
+            font-weight: 800;
+            font-size: 0.85rem;
+            padding: 5px 16px;
+            border-radius: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .subtitle-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .flight-card {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid var(--starlux-gold);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .flight-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dashed rgba(212, 175, 55, 0.3);
+            padding-bottom: 14px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .flight-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--starlux-gold);
+            font-weight: 700;
+            font-size: 1.15rem;
+        }
+
+        .flight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .flight-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .flight-leg {
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 14px;
+            padding: 18px;
+            border: 1px solid var(--card-border);
+        }
+
+        .leg-title {
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .route-display {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 12px 0;
+        }
+
+        .airport-code {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .airport-name {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .flight-arrow {
+            text-align: center;
+            color: var(--starlux-gold);
+            font-size: 0.85rem;
+        }
+
+        .time-badge {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #38bdf8;
+        }
+
+        .leg-details {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            gap: 12px;
+        }
+
+        .transit-card {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 35px;
+        }
+
+        .transit-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #38bdf8;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .transit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .transit-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .transit-item {
+            background: rgba(30, 41, 59, 0.5);
+            padding: 12px 16px;
+            border-radius: 12px;
+            border-left: 3px solid #38bdf8;
+        }
+
+        .transit-item h6 {
+            font-size: 0.95rem;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .transit-item p {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+        }
+
+        /* Address Section Card */
+        .address-card {
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid var(--accent-purple);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 35px;
+        }
+
+        .address-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--accent-purple);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .address-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+
+        .address-table th {
+            text-align: left;
+            padding: 10px;
+            background: rgba(30, 41, 59, 0.8);
+            color: var(--accent-gold);
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .address-table td {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #e2e8f0;
+        }
+
+        .day-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            margin-bottom: 24px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .day-card:hover {
+            border-color: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .day-header {
+            padding: 18px 24px;
+            background: rgba(15, 23, 42, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .day-tag {
+            background: #ef4444;
+            color: #fff;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .day-card.highlight .day-tag {
+            background: linear-gradient(90deg, #8b5cf6, #ec4899);
+        }
+
+        .day-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-left: 12px;
+        }
+
+        .day-date {
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .day-body {
+            padding: 24px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(245, 158, 11, 0.2));
+            border: 1px solid var(--accent-gold);
+            border-radius: 14px;
+            padding: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .highlight-icon {
+            font-size: 2.2rem;
+        }
+
+        .highlight-text h4 {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .highlight-text p {
+            font-size: 0.92rem;
+            color: #f1f5f9;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent-gold);
+            border: 2px solid var(--bg-dark);
+        }
+
+        .timeline-time {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 2px;
+        }
+
+        .timeline-content h5 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .timeline-content p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .cuisine-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        @media (max-width: 600px) {
+            .cuisine-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .cuisine-item {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .cuisine-type {
+            font-weight: 700;
+            color: var(--accent-pink);
+            margin-right: 6px;
+        }
+
+        .tips-card {
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 24px;
+            margin-top: 30px;
+        }
+
+        .tips-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tips-list {
+            list-style: none;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .tips-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            line-height: 1.5;
+        }
+
+        .tips-list li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="agency-tag">Antigravity Premium Travel</div>
+        <h1>東京夏日花火與哈利波特影城 5日精緻隨行指南</h1>
+        <div class="subtitle">
+            <div class="subtitle-item">📅 2026/07/25 - 07/29</div>
+            <div class="subtitle-item">🏨 住宿基地：錦糸町 (JR總武線/地鐵半藏門線)</div>
+            <div class="subtitle-item">✨ 亮點：隅田川花火 / 哈利波特影城 / 鐮倉古都</div>
+        </div>
+    </header>
+
+    <!-- Flight Ticket Card -->
+    <div class="flight-card">
+        <div class="flight-header">
+            <div class="flight-brand">
+                <span>✈️ 星宇航空 STARLUX Airlines</span>
+            </div>
+        </div>
+        <div class="flight-grid">
+            <div class="flight-leg">
+                <div class="leg-title">
+                    <span>【去程】07月25日 (週六)</span>
+                    <span>JX800</span>
+                </div>
+                <div class="route-display">
+                    <div>
+                        <div class="time-badge">08:30</div>
+                        <div class="airport-code">TPE</div>
+                        <div class="airport-name">台北桃園 T1</div>
+                    </div>
+                    <div class="flight-arrow">
+                        <div>3h 25m</div>
+                        <div>✈ ─── ✈</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="time-badge">12:55</div>
+                        <div class="airport-code">NRT</div>
+                        <div class="airport-name">東京成田 T2</div>
+                    </div>
+                </div>
+                <div class="leg-details">
+                    <span>機型: Airbus A350-1000</span>
+                    <span>艙等: 經濟艙 L</span>
+                </div>
+            </div>
+
+            <div class="flight-leg">
+                <div class="leg-title">
+                    <span>【回程】07月29日 (週三)</span>
+                    <span>JX805</span>
+                </div>
+                <div class="route-display">
+                    <div>
+                        <div class="time-badge">20:40</div>
+                        <div class="airport-code">NRT</div>
+                        <div class="airport-name">東京成田 T2</div>
+                    </div>
+                    <div class="flight-arrow">
+                        <div>3h 40m</div>
+                        <div>✈ ─── ✈</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="time-badge">23:20</div>
+                        <div class="airport-code">TPE</div>
+                        <div class="airport-name">台北桃園 T1</div>
+                    </div>
+                </div>
+                <div class="leg-details">
+                    <span>機型: Airbus A330-900</span>
+                    <span>艙等: 經濟艙 V</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Maps Addresses Section -->
+    <div class="address-card">
+        <div class="address-title">📍 推薦景點與美食詳細地址 (Google Maps 導航必備)</div>
+        <table class="address-table">
+            <thead>
+                <tr>
+                    <th>分類</th>
+                    <th>景點 / 店家名稱</th>
+                    <th>詳細日文地址</th>
+                    <th>備註與交通資訊</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>住宿/基地</td>
+                    <td>錦糸町車站周邊</td>
+                    <td>東京都墨田区江東橋3丁目 / 錦糸2丁目</td>
+                    <td>JR 總武線 / 地鐵半藏門線出站</td>
+                </tr>
+                <tr>
+                    <td>Day 1 景點</td>
+                    <td>隅田川花火大會 (第一/二會場)</td>
+                    <td>東京都台東区浅草 / 墨田区向島 (墨田川沿岸)</td>
+                    <td>地鐵押上站 / 淺草站步行</td>
+                </tr>
+                <tr>
+                    <td>Day 1 美食</td>
+                    <td>真鯛拉麵 麵魚 錦糸町本店</td>
+                    <td>東京都墨田区江東橋2-8-8 K-building 1F</td>
+                    <td>錦糸町站南口步行 5 分鐘</td>
+                </tr>
+                <tr>
+                    <td>Day 1 宵夜</td>
+                    <td>磯丸水產 錦糸町南口店</td>
+                    <td>東京都墨田区江東橋3-12-3 Arkleビル 1-2F</td>
+                    <td>24小時營業，錦糸町站南口</td>
+                </tr>
+                <tr>
+                    <td>Day 2 景點</td>
+                    <td>鶴岡八幡宮</td>
+                    <td>神奈川県鎌倉市雪ノ下2-1-31</td>
+                    <td>鐮倉站東口步行 10 分鐘</td>
+                </tr>
+                <tr>
+                    <td>Day 2 景點</td>
+                    <td>小町通商店街</td>
+                    <td>神奈川県鎌倉市小町1丁目～2丁目</td>
+                    <td>鐮倉站東口出站即達</td>
+                </tr>
+                <tr>
+                    <td>Day 2 美食</td>
+                    <td>Caraway 歐式咖哩 (キャラウェイ)</td>
+                    <td>神奈川県鎌倉市小町2-12-20</td>
+                    <td>小町通巷內排隊名店</td>
+                </tr>
+                <tr>
+                    <td>Day 2 景點</td>
+                    <td>鐮倉大佛 (高德院)</td>
+                    <td>神奈川県鎌倉市長谷4-2-28</td>
+                    <td>江之電「長谷站」步行 7 分鐘</td>
+                </tr>
+                <tr>
+                    <td>Day 2 景點</td>
+                    <td>長谷寺 (Hase-dera)</td>
+                    <td>神奈川県鎌倉市長谷3-11-2</td>
+                    <td>江之電「長谷站」步行 5 分鐘</td>
+                </tr>
+                <tr>
+                    <td>Day 2 美食</td>
+                    <td>利久牛舌 錦糸町店</td>
+                    <td>東京都墨田区江東橋3-14-5 TERMINA 5F</td>
+                    <td>錦糸町車站 Termina 百貨 5F</td>
+                </tr>
+                <tr>
+                    <td>Day 3 景點</td>
+                    <td>淺草寺 & 雷門</td>
+                    <td>東京都台東区浅草2-3-1</td>
+                    <td>地鐵淺草站 1 號出口步行 5 分鐘</td>
+                </tr>
+                <tr>
+                    <td>Day 3 美食</td>
+                    <td>淺草今半 國際通本店 (壽喜燒)</td>
+                    <td>東京都台東区西浅草3-1-12</td>
+                    <td>つくばエクスプレス淺草站直達</td>
+                </tr>
+                <tr>
+                    <td>Day 3 景點</td>
+                    <td>明治神宮</td>
+                    <td>東京都渋谷区代々木神園町1-1</td>
+                    <td>JR 原宿站 / 明治神宮前站直達</td>
+                </tr>
+                <tr>
+                    <td>Day 3 景點</td>
+                    <td>Shibuya Sky (澀谷 Sky)</td>
+                    <td>東京都渋谷区渋谷2-24-12 (Scramble Square 47F)</td>
+                    <td>澀谷站直通 Scramble Square</td>
+                </tr>
+                <tr>
+                    <td>Day 3 美食</td>
+                    <td>鴨to蔥 拉麵 (らーめん 鴨to葱 上野本店)</td>
+                    <td>東京都台東区上野6-4-15</td>
+                    <td>JR 御徒町站北口步行 1 分鐘</td>
+                </tr>
+                <tr>
+                    <td>Day 4 景點</td>
+                    <td>東京哈利波特影城 (WB Studio Tour Tokyo)</td>
+                    <td>東京都練馬区春日町1-1-7</td>
+                    <td>西武/都營大江戶線「豐島園站」步行 2 分鐘</td>
+                </tr>
+                <tr>
+                    <td>Day 4 美食</td>
+                    <td>AFURI 柚子鹽拉麵 (原宿店)</td>
+                    <td>東京都渋谷区千駄ヶ谷3-63-1 1F</td>
+                    <td>JR 原宿站竹下口步行 3 分鐘</td>
+                </tr>
+                <tr>
+                    <td>Day 4 美食</td>
+                    <td>極味屋 漢堡排 (極味や 渋谷パルコ店)</td>
+                    <td>東京都渋谷区宇田川町15-1 SHIBUYA PARCO B1F</td>
+                    <td>澀谷 PARCO 百貨 B1F</td>
+                </tr>
+                <tr>
+                    <td>Day 5 購物/美食</td>
+                    <td>阿卡將 Honpo (アルカキット錦糸町店)</td>
+                    <td>東京都墨田区錦糸2-2-1 アルカキット錦糸町 5F</td>
+                    <td>錦糸町站北口步行 1 分鐘</td>
+                </tr>
+                <tr>
+                    <td>Day 5 美食</td>
+                    <td>敘敘苑燒肉 錦糸町南口店 (叙々苑)</td>
+                    <td>東京都墨田区江東橋3-13-6 KINSIAビル 8・9F</td>
+                    <td>錦糸町站南口步行 2 分鐘</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Transit Card -->
+    <div class="transit-card">
+        <div class="transit-title">🚦 交通矛盾點與順路度實測驗證 (Conflict & Route Check)</div>
+        <div class="transit-grid">
+            <div class="transit-item">
+                <h6>Day 1 入境 vs. 花火管制 (完全無矛盾)</h6>
+                <p>12:55 抵達 NRT，15:30 至錦糸町 Check-in，16:30 前往隅田川花火周邊。於 19:00 開放前安穩占位！</p>
+            </div>
+            <div class="transit-item">
+                <h6>Day 3 澀谷 ➔ 18:30 聚餐 (極度順路)</h6>
+                <p>澀谷搭 JR 山手線 16-25 分鐘直達有樂町/上野，17:30 離場 18:00 前即抵達，聚餐充裕無壓力。</p>
+            </div>
+            <div class="transit-item">
+                <h6>Day 4 哈利波特影城 (官方可提前1小時)</h6>
+                <p>影城允許提早 1 小時 (10:00) 進入大廳/商店。09:20 錦糸町出發 ➔ 10:15 抵達豐島園，時間最完美！</p>
+            </div>
+            <div class="transit-item">
+                <h6>Day 5 返台機場報到 (時間超寬裕)</h6>
+                <p>20:40 JX805 起飛（18:10 前需抵達）。16:15 錦糸町搭 JR 總武快速線 17:35 到成田 T2，時間極充裕！</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 1 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div>
+                <span class="day-tag">DAY 01</span>
+                <span class="day-title">抵達東京 ➔ 錦糸町 Check-in ➔ 隅田川花火大會</span>
+            </div>
+            <div class="day-date">07/25 (六)</div>
+        </div>
+        <div class="day-body">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">06:00 - 08:30</div>
+                    <div class="timeline-content">
+                        <h5>桃園國際機場 T1 集合與登機</h5>
+                        <p>辦理星宇航空 JX800 報到與托運行李，08:30 準時起飛前往東京。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">12:55 - 14:30</div>
+                    <div class="timeline-content">
+                        <h5>抵達成田機場 T2 ➔ 錦糸町</h5>
+                        <p>入境通關後，搭乘 JR 總武快速線直達錦糸町站，前往飯店 Check-in 放置行李。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">16:30 - 20:30</div>
+                    <div class="timeline-content">
+                        <h5>【靈魂行程】隅田川花火大會盛典</h5>
+                        <p>前往墨田川河畔/押上周邊佔位，感受日本夏日代表性花火與絢麗夜空。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cuisine-grid">
+                <div class="cuisine-item"><span class="cuisine-type">早</span>機上輕食 / 成田機場簡餐</div>
+                <div class="cuisine-item"><span class="cuisine-type">午</span>真鯛拉麵 麵魚 (錦糸町名店)</div>
+                <div class="cuisine-item"><span class="cuisine-type">晚</span>慶典屋台小吃 / 磯丸水產 / 鳥貴族</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div>
+                <span class="day-tag">DAY 02</span>
+                <span class="day-title">古都鐮倉一日遊：神社參拜與老街巡禮</span>
+            </div>
+            <div class="day-date">07/26 (日)</div>
+        </div>
+        <div class="day-body">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">08:30 - 12:30</div>
+                    <div class="timeline-content">
+                        <h5>鐮倉參拜【鶴岡八幡宮】與【小町通】</h5>
+                        <p>從錦糸町搭 JR 快速列車直達鐮倉，漫步歷史神社與熱鬧的古都商店街採買。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">13:30 - 17:00</div>
+                    <div class="timeline-content">
+                        <h5>搭乘江之電 ➔ 【鐮倉大佛】與【長谷寺】</h5>
+                        <p>感受復古江之電電車沿海風光，參觀震撼的大佛與長谷寺造景庭園。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cuisine-grid">
+                <div class="cuisine-item"><span class="cuisine-type">早</span>Komeda Coffee 珈琲所</div>
+                <div class="cuisine-item"><span class="cuisine-type">午</span>Caraway 咖哩 / 在地吻仔魚丼飯</div>
+                <div class="cuisine-item"><span class="cuisine-type">晚</span>利久牛舌 / OIOI 美食街</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 3 (Highlight Dinner) -->
+    <div class="day-card highlight">
+        <div class="day-header">
+            <div>
+                <span class="day-tag">DAY 03</span>
+                <span class="day-title">潮流與文化探索 ➔ 晚上朋友聚會（有樂町~上野）</span>
+            </div>
+            <div class="day-date">07/27 (一)</div>
+        </div>
+        <div class="day-body">
+            <div class="highlight-box">
+                <div class="highlight-icon">🍻</div>
+                <div class="highlight-text">
+                    <h4>【晚間重點行程】有樂町~上野區間 朋友歡聚夜</h4>
+                    <p>已將朋友聚餐特別排定於 <strong>7/27 晚間 18:30</strong>！在阿美橫丁居酒屋或特色餐廳享受歡聚時刻。</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">09:00 - 12:00</div>
+                    <div class="timeline-content">
+                        <h5>參拜【淺草寺】與仲見世通商店街</h5>
+                        <p>漫步於傳統地標雷門、淺草寺參拜，享用古早味人形燒與傳統甜品。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">13:00 - 17:30</div>
+                    <div class="timeline-content">
+                        <h5>【明治神宮】➔ 原宿竹下通 / 表參道 / 澀谷 Sky</h5>
+                        <p>感受神宮綠意氛圍，走訪潮流原宿表參道，或登上 Shibuya Sky 俯瞰東京夜景。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">18:30 - 21:30</div>
+                    <div class="timeline-content">
+                        <h5>【重點聚會】前往有樂町~上野區間 與朋友聚餐</h5>
+                        <p>搭乘 JR 山手線輕鬆抵達，於氣氛熱絡的居酒屋或名店與好友開心暢飲熱聊。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cuisine-grid">
+                <div class="cuisine-item"><span class="cuisine-type">早</span>珈琲天國 / 木村家本店</div>
+                <div class="cuisine-item"><span class="cuisine-type">午</span>大黑家天婦羅 / 淺草今半壽喜燒</div>
+                <div class="cuisine-item"><span class="cuisine-type">晚</span>阿美橫丁居酒屋 / 鴨to蔥拉麵</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 4 (Highlight Harry Potter) -->
+    <div class="day-card highlight">
+        <div class="day-header">
+            <div>
+                <span class="day-tag">DAY 04</span>
+                <span class="day-title">東京哈利波特影城 ➔ 下午池袋/銀座漫步</span>
+            </div>
+            <div class="day-date">07/28 (二)</div>
+        </div>
+        <div class="day-body">
+            <div class="highlight-box">
+                <div class="highlight-icon">🪄</div>
+                <div class="highlight-text">
+                    <h4>【重點預約行程】東京哈利波特影城 (Warner Bros. Studio Tour Tokyo)</h4>
+                    <p>已為您排定 <strong>早上 11:00 入場門票</strong>！進入九又四分之三月台與霍格華茲大禮堂體驗極致魔法世界。</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">09:15 - 10:30</div>
+                    <div class="timeline-content">
+                        <h5>錦糸町出發 ➔ 豐島園站</h5>
+                        <p>搭乘 JR 總武線至池袋，轉乘西武豐島線至「豐島園站」，步行約 2 分鐘抵達影城。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">11:00 - 15:30</div>
+                    <div class="timeline-content">
+                        <h5>【魔法體驗】哈利波特影城導覽與午餐</h5>
+                        <p>參觀霍格華茲大廳、斜角巷、禁忌森林，並於 Backlot Café 享用午餐與黃金奶油啤酒。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">16:00 - 20:30</div>
+                    <div class="timeline-content">
+                        <h5>池袋動漫商圈 / 銀座購物散步</h5>
+                        <p>搭車前往池袋 Sunshine City 或銀座商圈漫步放鬆，享用精緻拉麵與燒肉名店。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cuisine-grid">
+                <div class="cuisine-item"><span class="cuisine-type">早</span>狐狸屋牛丼 / 山長玉子燒</div>
+                <div class="cuisine-item"><span class="cuisine-type">午</span>影城內奶油啤酒 & Backlot Café</div>
+                <div class="cuisine-item"><span class="cuisine-type">晚</span>AFURI 柚子鹽拉麵 / 極味屋漢堡排</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-card">
+        <div class="day-header">
+            <div>
+                <span class="day-tag">DAY 05</span>
+                <span class="day-title">錦糸町最後採買 ➔ 前往成田機場搭機返台</span>
+            </div>
+            <div class="day-date">07/29 (三)</div>
+        </div>
+        <div class="day-body">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">09:30 - 11:30</div>
+                    <div class="timeline-content">
+                        <h5>錦糸町站前商圈掃貨</h5>
+                        <p>退房寄放行李後，至 Termina、阿卡將與藥妝店補齊伴手禮與購物清單。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">12:00 - 14:00</div>
+                    <div class="timeline-content">
+                        <h5>敘敘苑燒肉午餐</h5>
+                        <p>享用超值的敘敘苑商業午餐燒肉饗宴。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">15:30 - 17:30</div>
+                    <div class="timeline-content">
+                        <h5>取行李 ➔ JR 總武快速線直達成田機場 T2</h5>
+                        <p>搭乘直達列車輕鬆前往成田機場第二航廈，無須頻繁轉乘。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">18:10 - 20:40</div>
+                    <div class="timeline-content">
+                        <h5>星宇航空 JX805 報到與免稅店購物</h5>
+                        <p>辦理登機手續，最後於成田免稅店採買日本名產，20:40 輕鬆起飛返台。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cuisine-grid">
+                <div class="cuisine-item"><span class="cuisine-type">早</span>Saint-Germain 麵包店</div>
+                <div class="cuisine-item"><span class="cuisine-type">午</span>叙叙苑燒肉 (超值商業午餐)</div>
+                <div class="cuisine-item"><span class="cuisine-type">晚</span>成田機場美食街 / 星宇機上餐點</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tips Card -->
+    <div class="tips-card">
+        <div class="tips-title">💡 旅行社專屬貼心提醒 (Professional Travel Tips)</div>
+        <ul class="tips-list">
+            <li><strong>7/27 朋友聚會安排</strong>：已為您精確安排於 7/27 (一) 晚間在「有樂町~上野區間」與朋友聚餐！當天下午在原宿/澀谷結束後可直接搭乘 JR 山手線前往。</li>
+            <li><strong>7/28 哈利波特影城</strong>：預約入場時間為 7/28 (二) 上午 11:00，官方允許提前 60 分鐘（10:00）進入影城大廳/餐廳/商店，請於 10:30 前抵達豐島園站。參觀時間約 3.5 ~ 4 小時。</li>
+            <li><strong>航班資訊</strong>：星宇航空去程 JX800 08:30 起飛（06:00 抵達 TPE T1）；回程 JX805 20:40 起飛（18:10 抵達 NRT T2）。錦糸町站搭 JR 總武快速線可直達成田機場。</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>© 2026 Antigravity Travel Agency. All rights reserved. 願您擁有美好快樂的東京盛夏魔法之旅！</p>
+    </footer>
+</div>
+
+</body>
+</html>
