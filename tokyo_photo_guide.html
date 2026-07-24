@@ -325,25 +325,33 @@
         .photo-side {
             position: relative;
             height: 100%;
-            min-height: 250px;
+            min-height: 280px;
+            background: #0f172a;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid var(--card-border);
         }
 
-        .photo-side img {
+        .photo-side iframe {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            min-height: 240px;
+            border: 0;
+            flex: 1;
         }
 
         .photo-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 12px 16px;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
-            font-size: 0.85rem;
+            position: relative;
+            padding: 10px 14px;
+            background: rgba(15, 23, 42, 0.95);
+            font-size: 0.82rem;
             color: #e2e8f0;
             font-weight: 500;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
         }
 
         .info-side {
@@ -472,12 +480,12 @@
         </div>
     </header>
 
-    <!-- Main Visual Hero Banner -->
+    <!-- Main Visual Hero Map Banner -->
     <div class="hero-banner">
-        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1200&auto=format&fit=crop" alt="Tokyo Sumida River Fireworks">
-        <div class="hero-overlay">
-            <h2>東京盛夏盛宴 ＆ 霍格華茲魔法之旅</h2>
-            <p>包含隅田川璀璨花火、鐮倉江之電海景、淺草與澀谷 Sky，以及全新登場的東京哈利波特影城沉浸體驗。</p>
+        <iframe src="https://maps.google.com/maps?q=Tokyo,Japan&t=&z=11&ie=UTF8&iwloc=&output=embed" style="width:100%; height:100%; border:0; opacity:0.85;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="hero-overlay" style="pointer-events: none;">
+            <h2>🗺️ 東京盛夏盛宴 ＆ 霍格華茲魔法路線動線圖</h2>
+            <p>涵蓋錦糸町基地、隅田川花火、淺草與晴空塔、鐮倉古都、東京鐵塔、池袋聚餐與哈利波特影城動線。</p>
         </div>
     </div>
 
@@ -606,6 +614,123 @@
                     <td>東京都墨田区錦糸2-2-1 / 江東橋3-13-6</td>
                     <td>最後補貨與敘敘苑頂級燒肉午餐</td>
                 </tr>
+    </div>
+
+    <!-- Detailed Transit Schedule Card -->
+    <div class="address-card" style="border-color: #38bdf8; margin-bottom: 35px;">
+        <div class="address-title" style="color: #38bdf8;">🚃 全行程交通預估時間與轉乘全總覽 (5 Days Transit Schedule)</div>
+        <table class="address-table">
+            <thead>
+                <tr>
+                    <th>天數/行程區段</th>
+                    <th>推薦搭乘路線與轉乘方式</th>
+                    <th>預估車程時間</th>
+                    <th>交通備註與建議</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Day 1 成田機場 ➔ 錦糸町</td>
+                    <td>JR 總武線快速 (成田特快 / 總武快速)</td>
+                    <td><strong style="color:#f59e0b;">80 分鐘</strong></td>
+                    <td>直達免換車，行李輕鬆放飯店</td>
+                </tr>
+                <tr>
+                    <td>Day 1 錦糸町 ➔ 淺草寺 (雷門)</td>
+                    <td>地鐵半藏門線 ➔ 押上轉淺草線</td>
+                    <td><strong style="color:#f59e0b;">12 分鐘</strong></td>
+                    <td>或搭計程車約 10 分鐘 (約 1,500 日圓)</td>
+                </tr>
+                <tr>
+                    <td>Day 1 淺草寺 ➔ 東京晴空塔</td>
+                    <td>隅田川水岸步道散步 (或東武晴空塔線)</td>
+                    <td><strong style="color:#f59e0b;">步行 15 分鐘</strong></td>
+                    <td>邊散步邊近距離拍攝晴空塔全景</td>
+                </tr>
+                <tr>
+                    <td>Day 1 晴空塔/押上 ➔ 錦糸町</td>
+                    <td>地鐵半藏門線 (押上 ➔ 錦糸町)</td>
+                    <td><strong style="color:#f59e0b;">3 分鐘</strong></td>
+                    <td>1 站直達，賞完花火極速回飯店</td>
+                </tr>
+                <tr>
+                    <td>Day 2 錦糸町 ➔ 鐮倉車站</td>
+                    <td>JR 總武快速線 / 橫須賀線</td>
+                    <td><strong style="color:#f59e0b;">55 分鐘</strong></td>
+                    <td>晨間直達車，免換車直奔鐮倉古都</td>
+                </tr>
+                <tr>
+                    <td>Day 2 鐮倉站 ➔ 長谷站 (大佛)</td>
+                    <td>江之電 (江之島電鐵)</td>
+                    <td><strong style="color:#f59e0b;">5 分鐘</strong></td>
+                    <td>體驗復古沿海風光電車</td>
+                </tr>
+                <tr>
+                    <td>Day 2 鐮倉 ➔ 銀座/日本橋精品區</td>
+                    <td>JR 橫須賀線至新橋/東京站 轉地鐵</td>
+                    <td><strong style="color:#f59e0b;">50 分鐘</strong></td>
+                    <td>採買 Goyard、Chanel、Dior、BAO BAO、Uniqlo</td>
+                </tr>
+                <tr>
+                    <td>Day 2 銀座 ➔ 錦糸町飯店</td>
+                    <td>地鐵丸之內線至東京站 轉 JR 總武線</td>
+                    <td><strong style="color:#f59e0b;">15 分鐘</strong></td>
+                    <td>買完滿載而歸輕鬆回飯店</td>
+                </tr>
+                <tr>
+                    <td>Day 3 錦糸町 ➔ 永田町 (山王鳥居)</td>
+                    <td>地鐵半藏門線 (錦糸町 ➔ 永田町)</td>
+                    <td><strong style="color:#f59e0b;">16 分鐘</strong></td>
+                    <td>直達日枝神社山王稻荷千本鳥居</td>
+                </tr>
+                <tr>
+                    <td>Day 3 永田町 ➔ 赤羽橋 (東京鐵塔)</td>
+                    <td>地鐵南北線 ➔ 麻布十番轉大江戶線</td>
+                    <td><strong style="color:#f59e0b;">8 分鐘</strong></td>
+                    <td>或計程車約 8 分鐘直達芝公園拍照</td>
+                </tr>
+                <tr>
+                    <td>Day 3 赤羽橋 ➔ 原宿 (明治神宮)</td>
+                    <td>地鐵大江戶線 ➔ 青山一丁目轉半藏門線</td>
+                    <td><strong style="color:#f59e0b;">15 分鐘</strong></td>
+                    <td>直達原宿與明治神宮入口</td>
+                </tr>
+                <tr>
+                    <td>Day 3 原宿/表參道 ➔ 池袋車站</td>
+                    <td>JR 山手線 (原宿 ➔ 池袋)</td>
+                    <td><strong style="color:#f59e0b;">12 分鐘</strong></td>
+                    <td>直達，19:00 準時與朋友會合聚餐</td>
+                </tr>
+                <tr>
+                    <td>Day 3 池袋車站 ➔ 錦糸町飯店</td>
+                    <td>JR 山手線至秋葉原 轉 JR 總武線</td>
+                    <td><strong style="color:#f59e0b;">25 分鐘</strong></td>
+                    <td>聚餐結束輕鬆回飯店休息</td>
+                </tr>
+                <tr>
+                    <td>Day 4 錦糸町 ➔ 豐島園 (影城)</td>
+                    <td>JR 總武線至新宿 轉 都營大江戶線</td>
+                    <td><strong style="color:#f59e0b;">45 分鐘</strong></td>
+                    <td>建議 09:20 出發，10:15 抵達提前進大廳</td>
+                </tr>
+                <tr>
+                    <td>Day 4 豐島園 ➔ 東京車站 (丸之內)</td>
+                    <td>西武豐島線至池袋 轉 地鐵丸之內線</td>
+                    <td><strong style="color:#f59e0b;">30 分鐘</strong></td>
+                    <td>拍攝丸之內古蹟與大丸百貨購物</td>
+                </tr>
+                <tr>
+                    <td>Day 4 東京車站 ➔ 錦糸町飯店</td>
+                    <td>JR 總武線快速 (東京 ➔ 錦糸町)</td>
+                    <td><strong style="color:#f59e0b;">8 分鐘</strong></td>
+                    <td>1 站直達，車程極短</td>
+                </tr>
+                <tr>
+                    <td>Day 5 錦糸町 ➔ 成田機場 T2</td>
+                    <td>JR 總武線快速 (錦糸町 ➔ 成田機場)</td>
+                    <td><strong style="color:#f59e0b;">80 分鐘</strong></td>
+                    <td>15:30~16:15 點搭車，17:35 前抵達機場</td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -621,8 +746,11 @@
         </div>
         <div class="photo-grid-layout">
             <div class="photo-side">
-                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1200&auto=format&fit=crop" alt="Sumidagawa Fireworks">
-                <div class="photo-caption">🎆 淺草寺散步、東京晴空塔與隅田川花火盛典</div>
+                <iframe src="https://maps.google.com/maps?q=Asakusa+Sensoji,Tokyo+Skytree,Sumida+River&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+                <div class="photo-caption">
+                    <span>🗺️ Day 1 地圖：淺草寺 ➔ 晴空塔 ➔ 花火會場</span>
+                    <a href="https://www.google.com/maps/dir/Kinshicho+Station/Senso-ji/Tokyo+Skytree" target="_blank" style="color:var(--accent-blue); text-decoration:none; font-weight:bold;">開啟導航 ➔</a>
+                </div>
             </div>
             <div class="info-side">
                 <div class="timeline">
@@ -668,8 +796,11 @@
         </div>
         <div class="photo-grid-layout">
             <div class="photo-side">
-                <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=1200&auto=format&fit=crop" alt="Kamakura Daibutsu">
-                <div class="photo-caption">⛩️ 鐮倉大佛 & 銀座 Goyard/Chanel/Dior 旗艦店</div>
+                <iframe src="https://maps.google.com/maps?q=Kamakura+Station,Ginza+Tokyo&t=&z=11&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+                <div class="photo-caption">
+                    <span>🗺️ Day 2 地圖：鐮倉大佛 ➔ 江之電 ➔ 銀座精品街</span>
+                    <a href="https://www.google.com/maps/dir/Kinshicho+Station/Kamakura+Station/Ginza" target="_blank" style="color:var(--accent-blue); text-decoration:none; font-weight:bold;">開啟導航 ➔</a>
+                </div>
             </div>
             <div class="info-side">
                 <div class="timeline">
@@ -708,8 +839,11 @@
         </div>
         <div class="photo-grid-layout">
             <div class="photo-side">
-                <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=1200&auto=format&fit=crop" alt="Torii Gate Meiji Shrine">
-                <div class="photo-caption">🗼 東京鐵塔絕景 & 山王稻荷神社赤紅千本鳥居</div>
+                <iframe src="https://maps.google.com/maps?q=Hie+Shrine+Nagatacho,Tokyo+Tower,Omotesando,Ikebukuro+Station&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+                <div class="photo-caption">
+                    <span>🗺️ Day 3 地圖：山王鳥居 ➔ 東京鐵塔 ➔ 原宿 ➔ 池袋</span>
+                    <a href="https://www.google.com/maps/dir/Kinshicho+Station/Hie+Shrine/Tokyo+Tower/Omotesando/Ikebukuro+Station" target="_blank" style="color:var(--accent-blue); text-decoration:none; font-weight:bold;">開啟導航 ➔</a>
+                </div>
             </div>
             <div class="info-side">
                 <div class="highlight-box">
@@ -776,8 +910,11 @@
         </div>
         <div class="photo-grid-layout">
             <div class="photo-side">
-                <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?q=80&w=1200&auto=format&fit=crop" alt="Harry Potter Hogwarts Magic">
-                <div class="photo-caption">🪄 霍格華茲大禮堂 & 東京車站丸之內紅磚建築</div>
+                <iframe src="https://maps.google.com/maps?q=Toshimaen+Station,Tokyo+Station&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+                <div class="photo-caption">
+                    <span>🗺️ Day 4 地圖：哈利波特影城 ➔ 東京車站丸之內</span>
+                    <a href="https://www.google.com/maps/dir/Kinshicho+Station/Toshimaen+Station/Tokyo+Station" target="_blank" style="color:var(--accent-blue); text-decoration:none; font-weight:bold;">開啟導航 ➔</a>
+                </div>
             </div>
             <div class="info-side">
                 <div class="highlight-box">
@@ -830,8 +967,11 @@
         </div>
         <div class="photo-grid-layout">
             <div class="photo-side">
-                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Japanese Yakiniku">
-                <div class="photo-caption">🥩 敘敘苑頂級燒肉超值商業午餐</div>
+                <iframe src="https://maps.google.com/maps?q=Kinshicho+Station,Narita+Airport+Terminal+2&t=&z=10&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+                <div class="photo-caption">
+                    <span>🗺️ Day 5 地圖：錦糸町商圈 ➔ 敘敘苑 ➔ 成田機場</span>
+                    <a href="https://www.google.com/maps/dir/Kinshicho+Station/Narita+Airport+Terminal+2" target="_blank" style="color:var(--accent-blue); text-decoration:none; font-weight:bold;">開啟導航 ➔</a>
+                </div>
             </div>
             <div class="info-side">
                 <div class="timeline">
